@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 1 Assignment</title>
+  <meta name="description" content="An example HTML5 page with proper semantic structure, accessibility, and SEO-friendly metadata.">
+
+  <!-- ✅ Linking external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Accessible Semantic HTML Assignment</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#article">Sample Article</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="overview" aria-labelledby="overview-heading">
+      <h2 id="overview-heading">Overview</h2>
+      <p>This page demonstrates HTML5 semantic structure with proper headings, accessibility, and SEO-friendly metadata.</p>
+
+      <article aria-labelledby="why-html5">
+        <h3 id="why-html5">Why Use Semantic HTML?</h3>
+        <p>Semantic HTML helps browsers, assistive technologies, and search engines understand your content better.</p>
+      </article>
+
+      <article aria-labelledby="page-structure">
+        <h3 id="page-structure">Page Structure</h3>
+        <ol>
+          <li>Header with navigation</li>
+          <li>Main content sections</li>
+          <li>Accessible contact form</li>
+          <li>Footer with information</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="article" aria-labelledby="article-heading">
+      <h2 id="article-heading">Sample Article</h2>
+      <figure>
+        <img src="https://via.placeholder.com/800x300" alt="Placeholder image with 800 by 300 dimensions">
+        <figcaption>Figure 1: Example placeholder image (replace with meaningful content).</figcaption>
+      </figure>
+      <p>This is where the sample article text goes. Headings are used in order without skipping levels.</p>
+
+      <aside aria-labelledby="related-links">
+        <h3 id="related-links">Related Links</h3>
+        <ul>
+          <li><a href="#">Semantic HTML Guide</a></li>
+          <li><a href="#">Accessibility Basics</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Name:</label><br>
+          <input id="name" name="name" type="text" required>
+        </p>
+        <p>
+          <label for="email">Email:</label><br>
+          <input id="email" name="email" type="email" required>
+        </p>
+        <p>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time>Check my magics on style.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
